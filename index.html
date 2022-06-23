@@ -14,7 +14,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <title>ECSO Trading Pty. Ltd.</title>
   </head>
-  <body>
-    <h1>ECSO Trading Pty. Ltd.</h1>
-  </body>
+<body>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>ECSO Trading Pty. Ltd.</h1>
+      </div>
+      <p class="lead"></p>
+      <p></p>
+    </div>
+
+    <footer class="footer">
+      <div class="container"><p class="text-muted">Copyright <span id="copyright-year"></span> ECSO Trading Pty. Ltd.</p>
+      </div>
+    </footer>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("copyrightyear").innerHTML = year;
+    </script>
+
+</body>
 </html>
